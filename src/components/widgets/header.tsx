@@ -1,14 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-import { menu } from "@/constants/menu";
+import { menu } from "@/assets/data";
 
 import { Logo } from "@/components/widgets/logo";
 import { MenuMobile } from "@/components/widgets/menu-mobile";
-import { useState } from "react";
 
 export const Header = () => {
   const [showMenuMobile, setShowMenuMobile] = useState<boolean>(false);
@@ -27,7 +27,7 @@ export const Header = () => {
                   <Link
                     href={menu.href}
                     className={cn(
-                      "flex items-center gap-x-2 py-3 px-6 rounded-full transition-colors",
+                      "flex items-center gap-x-2 text-sm py-3 px-6 rounded-full transition-colors",
                       menu.href === "/menu"
                         ? "bg-primary font-medium"
                         : "hover:bg-background/70"

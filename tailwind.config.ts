@@ -20,6 +20,9 @@ const config: Config = {
           DEFAULT: "hsl(var(--text))",
         },
       },
+      borderRadius: {
+        "4xl": "2rem",
+      },
       transitionDuration: {
         DEFAULT: "150ms",
       },
