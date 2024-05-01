@@ -6,7 +6,7 @@ import { Sidebar } from "@/components/widgets/sidebar";
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="h-[100dvh]">
-      <section className="h-[10dvh] p-5 lg:p-8">
+      <section className="h-[10dvh] py-4 px-5 lg:px-8">
         <Header />
       </section>
       <section className="h-[90dvh] lg:flex">

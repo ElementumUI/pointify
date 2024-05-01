@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-import { menu } from "@/constants/menu";
+import { menu } from "@/assets/data";
 
 interface MenuMobileProps {
   isOpen: boolean;
