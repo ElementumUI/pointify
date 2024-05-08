@@ -40,7 +40,7 @@ export const CardQuantityProduct = ({ product }: CardQuantityProductProps) => {
             <i className="fi fi-rr-plus"></i>
           </button>
         </div>
-        <h3 className="text-lg font-bold">${quantity * price}</h3>
+        <h3 className="text-lg font-bold">${(quantity * price).toFixed(2)}</h3>
       </div>
     </>
   );
